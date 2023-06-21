@@ -1,0 +1,16 @@
+.aside{
+    background-color: red;
+    width: 35rem;
+    max-height: 750rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    position: relative;
+    top: 3rem;
+
+    &__nextVideo{
+        background-color: green;
+        width: 35rem;
+        height: 18.5rem;
+    }
+}
