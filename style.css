@@ -93,8 +93,10 @@ body {
 }
 .main__comments {
   width: 100%;
-  min-height: 40rem;
+  min-height: 15rem;
   padding: 2rem;
+  display: flex;
+  flex-direction: column-reverse;
 }
 .main__placeComment {
   width: 100%;

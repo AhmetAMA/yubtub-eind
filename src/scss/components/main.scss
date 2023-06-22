@@ -65,8 +65,10 @@
 
     &__comments{
         width: 100%;
-        min-height: 40rem;
+        min-height: 15rem;
         padding: 2rem;
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     &__placeComment{
