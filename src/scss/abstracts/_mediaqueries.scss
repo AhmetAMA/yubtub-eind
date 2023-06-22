@@ -1,0 +1,76 @@
+@use "./colors";
+@use "./mixins";
+
+@media screen and (max-width: 62.5rem) {
+    body{
+        flex-direction: column;
+    }
+    
+    .header{
+        padding: 2rem 2rem;
+        width: 	40rem;
+
+        &__logo{
+            gap: 2rem;
+        }
+    }
+
+    .main{
+        width: 40rem;
+
+        &__div{
+            padding: 0.5rem 0.5rem;
+            flex-direction: column;
+        }
+
+        &__articleImage{
+            gap: 0.5rem;
+        }
+
+        &__image{
+            width: 23%;
+        }
+
+        &__buttonDiv{
+            justify-content: end;
+        }
+
+        &__comments{
+            min-height: 15rem;
+            padding: 0 1rem;
+        }
+
+        &__placeComment{
+            gap: 1rem;
+        }
+
+        &__textarea{
+            width: 40rem;
+        }
+
+        &__commentDiv{
+            width: 95%;
+            height: 8rem;
+            gap: 1rem;
+        }
+
+        &__commentImg{
+            width: 40%;
+        }
+
+        &__commentP{
+            font-size: 1.5rem;
+        }
+    }
+
+    .aside{
+        width: 40rem;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 3rem;
+
+        &__nextVideo{
+            width: 45%;
+        }
+    }
+}

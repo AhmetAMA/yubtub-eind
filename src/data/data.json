@@ -4,38 +4,38 @@
             {
                 "id":0,
                 "video": "video--1.mp4",
-                "videoText":"this is video 1",
+                "videoText":"Hardhandige aanhouding rapper Josylvio gefilmd",
                 "link": 0
             },
            {
                 "id":1,
                 "video": "video--2.mp4",
-                "videoText":"this is video 2",
+                "videoText":"Dronkenlap trekt rapper Boef van podium",
                 "link": 1
            },
            {
                "id":2,
                "video": "video--3.mp4",
-               "videoText":"this is video 3",
+               "videoText":"Vrouw krijgt rake klappen van uitsmijter",
                "link": 2
            }
            ,
            {
                "id":3,
                "video": "video--4.mp4",
-               "videoText":"this is video 3",
+               "videoText":"ME moet hard ingrijpen bij voetbalrellen Den Haag",
                "link": 3
            },
            {
                "id":4,
                "video": "video--5.mp4",
-               "videoText":"this is video 3",
+               "videoText":"Schokkend: arrestatie Utrecht loopt uit de hand",
                "link": 4
            },
            {
                "id":5,
                "video": "video--6.mp4",
-               "videoText":"this is video 3",
+               "videoText":"Lerares ontslagen na bizarre actie",
                "link": 5
            }
         ]

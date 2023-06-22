@@ -1,43 +1,137 @@
+@use "../abstracts/colors";
+@use "../abstracts/mixins";
+@use "../abstracts/vars";
+
 .main{
     width: 60%;
-    background-color: green;
+    background-color: colors.$lightGrey;
+    border-right: 0.5rem solid colors.$purple;
+    border-bottom: 0.3rem solid colors.$purple;
+    border-left: 0.3rem solid colors.$purple;
     
-}
-
-.section{
-    display: flex;
-    justify-content:center;
-    padding: 2rem;
-    width: 100%;
-    min-height: 80rem;
-    background-color: yellow;
-
-    &__article{
-        
-    }
-
     &__video{
         width: 100%;
-        height: 40rem;
-        background-color: aqua;
+        padding: 0.3rem;
+        background-color: colors.$purple;
 
+        &:hover{
+            cursor: pointer;
+        }
     }
-
+    
     &__div{
+        padding: 1rem 2rem;
         display: flex;
         justify-content: space-between;
-        gap: 4rem;
-        flex-direction: reverse;
+        box-shadow: 0 0.1rem 0.2rem 0rem black;
+    }
+    
+    &__articleImage{
+        display: flex;
+        gap: 2rem;
     }
 
-    &__articleImage{
-
+    &__h3{
+        display: flex;
+        align-items: center;
+        // font-size: 2.2rem;
     }
 
     &__image{
-        width: 10rem;
+        width: 10%;
         border-radius: 50%;
-        aspect-ratio: 1/1;
         object-fit: cover;
+    }
+
+    &__buttonDiv{
+        @include mixins.flexCenter;
+    }
+    
+    &__button{
+        height: 4rem;
+        padding: 1rem 2rem;
+        border-radius: 1.5rem;
+        color: white;
+        background-color: colors.$purple;
+        border: none;
+
+        &:hover{
+            cursor: pointer;
+            box-shadow: -0.2rem 0.2rem 0.6rem 0 black;
+            transform: scale(1.05);
+            transition: 0.2s;
+        }
+    }
+
+    &__comments{
+        width: 100%;
+        min-height: 40rem;
+        padding: 2rem;
+    }
+
+    &__placeComment{
+        width: 100%;
+        height: 10rem;
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
+    &__textarea{
+        width: 50rem;
+        height: 4rem;
+        padding: 0.5rem 1rem;
+        border: 0.2rem solid colors.$purple;
+        border-radius: 0.7rem;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        resize: none;
+        color: colors.$purple;
+        background-color: colors.$lightGrey;
+    }
+
+    &__commentButton{
+        width: 10rem;
+        height: 3.5rem;
+        border-radius: 1.5rem;
+        font-size: 1.6rem;
+        border: 0.3rem solid colors.$purple;
+        color: colors.$purple;
+        background-color: colors.$lightGrey;
+
+        &:hover{
+            cursor: pointer;
+            color: colors.$lightGrey;
+            background-color: colors.$purple;
+            transition: 0.3s;
+        }
+    }
+
+    &__commentDiv{
+        width: 100%;
+        height: 10rem;
+        padding: 1rem;
+        border: 0.3rem solid colors.$purple;
+        margin: 1rem;
+        border-radius: 1rem;
+        display: flex;
+        align-items: center;
+        word-wrap: break-word;
+        overflow-x: hidden;
+        overflow-y: hidden;
+        background-color: colors.$lightGrey;
+        gap: 2rem;
+    }
+
+    &__commentImg{
+        width: 10%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__commentP{
+        word-wrap: break-word;
+        width: 65ch;
     }
 }

@@ -1,16 +1,25 @@
+@use "../abstracts/colors";
+@use "../abstracts/mixins";
+@use "../abstracts/vars";
+
 .aside{
-    background-color: red;
-    width: 35rem;
-    max-height: 750rem;
+    width: 25%;
+    padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    position: relative;
-    top: 3rem;
+    background-color: colors.$lightGrey;
+    border-right: 0.3rem solid colors.$purple;
+    border-bottom: 0.3rem solid colors.$purple;
 
     &__nextVideo{
-        background-color: green;
-        width: 35rem;
-        height: 18.5rem;
+        width: 100%;
+    }
+
+    &__nextVideo:hover{
+        cursor: pointer;
+        box-shadow: -0.5rem 0.5rem 0 0.5rem colors.$purple;
+        transform: translate(0.5rem, -0.5rem);
+        transition: 0.2s;
     }
 }

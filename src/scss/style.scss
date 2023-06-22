@@ -1,4 +1,15 @@
+@use "./base.scss";
+
+// abstracts
+@use "./abstracts/colors";
+@use "./abstracts/mixins";
+@use "./abstracts/reset";
+@use "./abstracts/vars";
+
+// components
+@use "./components/header.scss";
 @use "./components/main.scss";
 @use "./components/aside.scss";
-@use "./abstracts/reset.scss";
-@use "./components/comments.scss";
+
+// mediaqueries
+@use "./abstracts/mediaqueries";

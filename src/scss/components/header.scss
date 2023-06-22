@@ -1,0 +1,25 @@
+@use "../abstracts/colors";
+@use "../abstracts/mixins";
+@use "../abstracts/vars";
+
+.header{
+    padding: 2rem 11rem;
+    width: 100%;
+    background-color: colors.$lightGrey;
+    border: 0.3rem solid colors.$purple;
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    &__i{
+        font-size: 5rem;
+        color: colors.$purple;
+    }
+
+    &__h1{
+        color: colors.$black;
+    }
+}
